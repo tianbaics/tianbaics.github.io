@@ -3,8 +3,6 @@
 
 <head>
     <title> Bakh M. Khoussainov's Homepage</title>
-    <meta name="viewport1" content="user-scalable=no, width=device-width" />
-    <meta name="baidu-site-verification" content="code-OWsl1Akg9p" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html">
@@ -44,9 +42,6 @@
             background: #c1d9f0;
             box-shadow: none;
             z-index: 999;
-        }
-
-        .navbar-light {
             font-family: "Roboto", sans-serif;
             text-rendering: optimizeLegibility;
         }
@@ -59,75 +54,130 @@
             float: right;
         }
 
-        .w3-column {
-            flex: 0 0 33.%;
-            position: relative;
-            width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
-        }
-
         .header-fixed {
             position: -webkit-sticky;
             position: sticky;
             z-index: inherit;
+            flex-shrink: inherit;
             right: 0;
             left: 0;
             top: 0;
         }
 
-        .page-header {
-            flex-shrink: inherit;
+        @media only screen and (min-width: 600px) {
+            .home-head {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            .div-flex {
+                display: flex;
+            }
+
+            .div-section1 {
+                width: 30%;
+                text-align: center;
+                margin-top: 100px;
+                display: block;
+            }
+
+            .div-section2 {
+                width: 70%;
+                text-align: left;
+                padding-left: 5%;
+                padding-right: 5%;
+                display: block;
+            }
+
+            .home-sec1 {
+                width: 30%;
+                text-align: center;
+                margin-top: 70px;
+                margin-left: 5%;
+                display: block;
+            }
+
+            .home-sec2 {
+                width: 70%;
+                text-align: left;
+                padding-left: 5%;
+                padding-right: 5%;
+                display: block;
+            }
+
+            .second-div {
+                display: flex;
+                justify-content: center;
+                padding: 2% 5% 0% 5%;
+                text-rendering: optimizeLegibility;
+                text-align: justify;
+            }
+            .first-div-pad{
+                padding: 0% 5% 0% 5%;
+            }
+            .second-div-pad1 {
+                padding-left: 15%;
+            }
+
+            .second-div-pad2 {
+                padding-left: 20%;
+            }
         }
 
-        .th-head1 {
-            padding-top: 10px;
-            padding-bottom: 20px;
-            padding-left: 10px;
-            padding-right: 20px;
-        }
+        @media only screen and (max-width: 600px) {
+            .div-section1 {
+                width: 100%;
+                text-align: center;
+                display: block;
+            }
 
-        .th-head2 {
-            padding-top: 10px;
-            padding-bottom: 20px;
-            padding-left: 20px;
-            padding-right: 10px;
-        }
+            .div-section2 {
+                width: 100%;
+                text-align: center;
+                display: block;
+            }
 
-        .p-style {
-            text-indent: 30px;
-        }
+            .home-head {
+                margin-left: 0%;
+                margin-right: 0%;
+            }
 
-        .avatar {
-            width: 80%;
-            max-width: 300px;
-            margin-top: 35px;
-            object-fit: cover;
-            border-radius: 80%;
-        }
+            .div-flex {
+                display: block;
+            }
 
-        .head-style {
-            width: 30%;
-            padding: 20%, 0, 30%, 0;
-            text-align: center;
-        }
+            .home-sec1 {
+                width: 100%;
+                text-align: center;
+                margin-top: 30px;
+                display: block;
+            }
 
-        .second-div {
-            display: flex;
-            justify-content: center;
-        }
+            .home-sec2 {
+                width: 100%;
+                text-align: left;
+                padding-left: 5%;
+                padding-right: 5%;
+                display: block;
+            }
 
-        .div-section1 {
-            width: 33%;
-            text-align: center;
-            margin-top: 100px;
-        }
+            .second-div {
+                display: flex;
+                justify-content: center;
+                padding: 0% 0% 0% 0%;
+                text-rendering: optimizeLegibility;
+                text-align: justify;
+            }
+            .first-div-pad{
+                padding: 0% 0% 0% 0%;
+            }
+            .second-div-pad1 {
+                padding-left: 0%;
+            }
 
-        .div-section2 {
-            width: 67%;
-            text-align: left;
-            padding-left: 5%;
-            padding-right: 5%;
+            .second-div-pad2 {
+                padding-left: 0%;
+            }
         }
 
         .img-style1 {
@@ -151,7 +201,7 @@
 
 <body class="w3-content" style="max-width:100%">
     <!-- Sidebar/menu -->
-    <nav class="page-header header-fixed navbar navbar-light navbar-expand-lg" id="navigation">
+    <nav class="header-fixed navbar" id="navigation">
         <ul style="list-style-type: none;margin: 0;padding:1rem;overflow: hidden;background-color: #edf2f4;">
             <li class="listyle"><a id="button-contact" class="w3-bar-item w3-button">Contact</a></li>
             <li class="listyle"><a id="button-award" class="w3-bar-item w3-button ">Awards</a></li>
@@ -166,27 +216,33 @@
     <!--top menu on small screens-->
     <div>
         <!-- !PAGE CONTENT! -->
-        <div class="w3-container w3-padding-32" style="margin-left:10%;margin-right:5%;display: flex;" id="home">
+        <div class="w3-container w3-padding-32 div-flex" id="home">
             <!-- The Home Section -->
-            <div style="width: 28%; display: block;">
+            <div class="home-sec1" id="home-section1">
                 <div>
-                    <p style="text-align: center;"><img class="avatar" alt="profile photo" src="images/bakh.png"></p>
+                    <p style="text-align: center;"><img
+                            style=" width: 60%;max-width: 300px;object-fit: cover;border-radius: 80%;"
+                            alt="profile photo" src="images/bakh.png"></p>
                 </div>
                 <div>
                     <h6 style="text-align: center;"><strong>Bakh M.Khoussainov</strong> </h6>
                     <h6 style="text-align: center;">University of Electronic Science and Technology of China</h6>
                     <h6 style="text-align: center;"> The University of Auckland</h6>
-                        <p style="text-align: center;"><a href="#contact" target="_blank"><img style="width: 28px;height: 30px;" src="images/email.png"></a>
-                                <a href="https://twitter.com/BakhadyrMK" target="_black"><img style="width: 30px;height: 30px;" src="images/twitter.png"></a>
-                                <a href="https://scholar.google.com/citations?user=qQv6KckAAAAJ" target="_blank"><img style="width: 30px;height: 30px;" src="images/scholar.png"></a>
-                                <a href="https://en.wikipedia.org/wiki/Bakhadyr_Khoussainov" target="_black"><img style="width: 30px;height: 30px;" src="images/wiki.png"></a>
-                            </p>
+                    <p style="text-align: center;"><a href="#contact" target="_blank"><img
+                                style="width: 28px;height: 30px;" src="images/email.png"></a>
+                        <a href="https://twitter.com/BakhadyrMK" target="_black"><img style="width: 30px;height: 30px;"
+                                src="images/twitter.png"></a>
+                        <a href="https://scholar.google.com/citations?user=qQv6KckAAAAJ" target="_blank"><img
+                                style="width: 30px;height: 30px;" src="images/scholar.png"></a>
+                        <a href="https://en.wikipedia.org/wiki/Bakhadyr_Khoussainov" target="_black"><img
+                                style="width: 30px;height: 30px;" src="images/wiki.png"></a>
+                    </p>
                 </div>
             </div>
-            <div style="width: 72%; display: block;">
-                <div style="padding: 0% 5% 0% 10%; text-rendering: optimizeLegibility; text-align: justify;">
+            <div class="home-sec2" id="home-section2">
+                <div class="first-div-pad"style="text-rendering: optimizeLegibility; text-align: justify;">
                     <h1>Bakh M.Khoussainov</h1>
-                    <p class="p-style">
+                    <p style="text-indent: 30px;">
                         I am a professor of computer science at <a href="https://www.uestc.edu.cn/"
                             target="_blank"><strong>The University of Electronic
                                 Science and Technology of China(UESTC)</strong></a>,Chengdu. I lead <a
@@ -195,14 +251,12 @@
                         the computer science school of the UESTC.
                         I work on computable structures, automatic structutres, games on graphs, mechanism design, and
                         probability structures.
-
-
                     </p>
                 </div>
                 <div class="second-div">
-                    <div style="width: 40%; text-align:left;float: left;">
-                        <h4 style="text-align: center;">Interests & Hobbies</h4>
-                        <ol style="list-style-type:none;padding-left: 30%;">
+                    <div style="width: 50%; text-align:left;float: left;">
+                        <h4 class="second-div-pad1">Interests & Hobbies</h4>
+                        <ol class="second-div-pad2" style="list-style-type:none;">
                             <li><img class="img-style1" src="images/mark.png">Research</li>
                             <li><img class="img-style1" src="images/mark.png">Teaching</li>
                             <li><img class="img-style1" src="images/mark.png">Football(Soccer)</li>
@@ -212,9 +266,9 @@
                             <li><img class="img-style1" src="images/mark.png">Drinking coffee</li>
                         </ol>
                     </div>
-                    <div style="width: 60%; text-align:left;float:left;">
+                    <div style="width: 50%; text-align:left;float:left;">
                         <h4 style="text-align: center;">Work experience</h4>
-                        <ol style="list-style-type:none;padding-left: 30%;">
+                        <ol class="second-div-pad2" style="list-style-type:none;">
                             <li><img style="width:30px;height:30px;" src="images/doctor.png">2020-present:The University
                                 of
                                 Electronic
@@ -242,7 +296,7 @@
 
 
         <!-- The News Section -->
-        <div class="w3-container w3-light-grey w3-padding-32" style="display: flex;" id="news">
+        <div class="w3-container w3-light-grey w3-padding-32 div-flex" id="news">
             <div class="div-section1">
                 <h1>News</h1>
                 <h4 style="color:#989696;">recent news</h4>
@@ -317,7 +371,7 @@
 
 
         <!-- The Publication Section -->
-        <div class="w3-container w3-padding-32" id="publications" style="display: flex;">
+        <div class="w3-container w3-padding-32 div-flex" id="publications">
             <div class="div-section1">
                 <h1>Publications</h1>
                 <h4 style="color:#989696;">papers&books</h4>
@@ -384,13 +438,14 @@
 
 
         <!-- The Talks Section -->
-        <div class="w3-container w3-light-grey w3-padding-32" id="talks" style="display: flex;">
+        <div class="w3-container w3-light-grey w3-padding-32 div-flex" id="talks">
             <div class="div-section1">
                 <h1>Talks</h1>
                 <h4 style="color:#989696;">select lecture</h4>
             </div>
             <div class="div-section2">
-                <p>About 150 invited or plenary lectures in conferences and workshops. Recent selected ones are:</p>
+                <p style="text-align:left;">About 150 invited or plenary lectures in conferences and workshops. Recent
+                    selected ones are:</p>
                 <p>
                     <li class="w3-justify" style="list-style-type: none;"><img class="img-style1"
                             src="images/lecture.svg">
@@ -442,15 +497,14 @@
         </div>
 
         <!-- The Reserach Section -->
-        <div class="w3-container w3-padding-32" style="display: flex;" id="research">
+        <div class="w3-container w3-padding-32 div-flex" id="research">
             <div class="div-section1">
                 <h1>Research</h1>
                 <h4 style="color:#989696;">personal research</h4>
             </div>
             <div class="div-section2">
-                <p class="w3-left-align" style="line-height:200%">
-                </p>
-                <h4><img style="width:30px;height:30px" src="images/research.png">Primary research:</h4>
+                <h4 class="w3-left-align"><img style="width:30px;height:30px" src="images/research.png">Primary
+                    research:</h4>
                 <div style="display: flex;">
                     <div style="width: 50%;padding: 0 5% 0 5%;">
                         <ul style="list-style-type: none;">
@@ -467,7 +521,8 @@
                         </ul>
                     </div>
                 </div>
-                <h4> <img style="width:30px;height:30px" src="images/research.png"> Secondary research:</h4>
+                <h4 class="w3-left-align"> <img style="width:30px;height:30px" src="images/research.png"> Secondary
+                    research:</h4>
                 <div style="display: flex;">
                     <div style="width: 50%;padding: 0 5% 0 5%;">
                         <ul style="list-style-type: none;">
@@ -503,7 +558,7 @@
 
 
         <!-- The Services Section -->
-        <div class="w3-container w3-light-grey w3-padding-32" style="display: flex;" id="service">
+        <div class="w3-container w3-light-grey w3-padding-32 div-flex" id="service">
             <div class="div-section1">
                 <h1>Services</h1>
                 <h4 style="color:#989696;">appointment</h4>
@@ -549,7 +604,7 @@
             </div>
         </div>
         <!-- The Awards Section -->
-        <div class="w3-container w3-padding-32" style="display: flex;" id="award">
+        <div class="w3-container w3-padding-32 div-flex" id="award">
             <div class="div-section1">
                 <h1>Awards & Grants</h1>
                 <h4 style="color:#989696;">personal awards</h4>
@@ -651,7 +706,7 @@
         </div>
 
         <!--The Contact section-->
-        <div class="w3-container w3-light-grey w3-padding-32" style="display: flex;" id="contact">
+        <div class="w3-container w3-light-grey w3-padding-32 div-flex" id="contact">
             <div class="div-section1">
                 <h1>Contact</h1>
                 <h4 style="color:#989696;">contact me</h4>
